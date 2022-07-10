@@ -9,3 +9,5 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello austy'
 
+def test_func():
+    return "testtestintesintesintesin"
