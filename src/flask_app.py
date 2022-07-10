@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template
-import os
 
+# template_folder defined for pythonanywhere vm
 app = Flask(__name__, template_folder='/home/benaustin123/mysite/templates')
 
 # GLOBAL VARS
@@ -17,7 +17,6 @@ def display_home():
     Flask render of html template
     """
     
-    print(os.path.abspath(TEMPLATE_PATHS))
     return render_template("home.html")
 
 
