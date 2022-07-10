@@ -1,7 +1,8 @@
 
 from flask import Flask, render_template
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='/home/benaustin123/mysite/templates')
 
 # GLOBAL VARS
 TEMPLATE_PATHS = r"./templates"
@@ -15,7 +16,9 @@ def display_home():
     -------
     Flask render of html template
     """
-    return render_template("home.html", template_folder=TEMPLATE_PATHS)
+    
+    print(os.path.abspath(TEMPLATE_PATHS))
+    return render_template("home.html")
 
 
 def test_func():
