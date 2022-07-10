@@ -1,5 +1,6 @@
 
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
 
@@ -15,6 +16,8 @@ def display_home():
     -------
     Flask render of html template
     """
+    
+    print(os.path.abspath(TEMPLATE_PATHS))
     return render_template("home.html", template_folder=TEMPLATE_PATHS)
 
 
