@@ -9,8 +9,6 @@ body {
   }
   p {
     color: red;
+    margin: 200px;
   }
 
-  p.title {
-      margin: 200px;
-  }
