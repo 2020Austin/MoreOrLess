@@ -1,13 +1,22 @@
 
-# A very simple Flask Hello World app for you to get started with...
-# control-shift-g to open source control
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# GLOBAL VARS
+TEMPLATE_PATHS = r"./templates"
+
 @app.route('/')
-def hello_world():
-    return 'Hello austy'
+def display_home():
+    """
+    Display home when routed to homepage
+
+    Returns
+    -------
+    Flask render of html template
+    """
+    return render_template("home.html", template_folder=TEMPLATE_PATHS)
+
 
 def test_func():
     return "testtestintesintesintesin"
