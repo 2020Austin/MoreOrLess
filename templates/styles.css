@@ -1,9 +1,16 @@
 body {
-    background-color: powderblue;
+    background-color: rgb(224, 144, 144);
   }
   h1 {
     color: blue;
+    text-align: center;
+    size: 50cm;
+    vertical-align: middle;
   }
   p {
     color: red;
+  }
+
+  p.title {
+      margin: 200px;
   }
