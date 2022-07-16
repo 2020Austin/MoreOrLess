@@ -15,8 +15,21 @@ body {
   border: 2ch;
 }
   
-  p {
-    color: red;
-    margin: 200px;
-  }
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 25%;
+}
 
+.centered_title {
+  size: 200cm;
+  font: Helvetica;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff7b7b6e;
+  font-size: 60px;
+
+}
