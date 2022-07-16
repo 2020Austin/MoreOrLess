@@ -2,11 +2,19 @@ body {
     background-color: rgb(224, 144, 144);
   }
   h1 {
-    color: blue;
+    color: rgb(245, 245, 245);
     text-align: center;
     size: 50cm;
     vertical-align: middle;
+    font: Helvetica;
+    
   }
+
+.table {
+  text-align: center;
+  border: 2ch;
+}
+  
   p {
     color: red;
     margin: 200px;
