@@ -20,7 +20,7 @@ def display_home():
     return render_template("home.html")
 
 
-@app.route("/tierlist")
+@app.route("/tierlist.html")
 def display_tierlist():
     return render_template("tierlist.html")
 
