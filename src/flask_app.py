@@ -24,5 +24,10 @@ def display_home():
 def display_tierlist():
     return render_template("tierlist.html")
 
+
+@app.route("/ai_test.html")
+def display_tierlist():
+    return render_template("ai_test.html")
+
 def test_func():
     return "testtestintesintesintesin"
