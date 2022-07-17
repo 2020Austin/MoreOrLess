@@ -22,11 +22,29 @@ def display_home():
 
 @app.route("/tierlist.html")
 def display_tierlist():
+    """
+    Display tierlist maker
+
+    Returns
+    -------
+    Flask render of html template
+    """
+    
+    
     return render_template("tierlist.html")
 
 
 @app.route("/ai_test.html")
 def display_aitest():
+    """
+    Display ai test
+
+    Returns
+    -------
+    Flask render of html template
+    """
+    
+    
     return render_template("ai_test.html")
 
 def test_func():
