@@ -26,7 +26,7 @@ def display_tierlist():
 
 
 @app.route("/ai_test.html")
-def display_tierlist():
+def display_aitest():
     return render_template("ai_test.html")
 
 def test_func():
