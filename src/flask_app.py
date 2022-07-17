@@ -5,9 +5,9 @@ from flask import Flask, render_template
 app = Flask(__name__, template_folder='/home/benaustin123/mysite/templates')
 
 # GLOBAL VARS
-TEMPLATE_PATHS = r"./templates"
 
-@app.route('/')
+
+@app.route("/")
 def display_home():
     """
     Display home when routed to homepage
@@ -19,6 +19,10 @@ def display_home():
     
     return render_template("home.html")
 
+
+@app.route("/tierlist")
+def display_tierlist():
+    return render_template("tierlist.html")
 
 def test_func():
     return "testtestintesintesintesin"
