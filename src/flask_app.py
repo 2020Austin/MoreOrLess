@@ -2,7 +2,7 @@
 from flask import Flask, render_template
 
 # template_folder defined for pythonanywhere vm
-app = Flask(__name__, template_folder='/home/benaustin123/mysite/templates', static_url_path="/static")
+app = Flask(__name__, template_folder='/home/benaustin123/mysite/templates', static_url_path="/home/benaustin123/mysite/static")
 
 # GLOBAL VARS
 
