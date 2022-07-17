@@ -2,13 +2,34 @@ body {
     background-color: rgb(224, 144, 144);
   }
   h1 {
-    color: blue;
+    color: rgb(245, 245, 245);
     text-align: center;
     size: 50cm;
     vertical-align: middle;
-  }
-  p {
-    color: red;
-    margin: 200px;
+    font: Helvetica;
+    
   }
 
+.table {
+  text-align: center;
+  border: 2ch;
+}
+  
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 25%;
+}
+
+.centered_title {
+  size: 200cm;
+  font: Helvetica;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff7b7b6e;
+  font-size: 60px;
+
+}
